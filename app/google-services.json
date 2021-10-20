@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "243394653668",
+    "firebase_url": "https://babycuddlecrew-166ed.firebaseio.com",
+    "project_id": "babycuddlecrew-166ed",
+    "storage_bucket": "babycuddlecrew-166ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:243394653668:android:82b54585cf69e671366bf1",
+        "android_client_info": {
+          "package_name": "com.example.babycuddlecrew"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "243394653668-8jic14l7pbrsmgketp7ol5193ii357ih.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCM1Y_i8IXxXKXtAi0ukoY5d3URDSUicww"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "243394653668-8jic14l7pbrsmgketp7ol5193ii357ih.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

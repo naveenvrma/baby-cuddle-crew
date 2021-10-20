@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f6f6f6">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/profile_image"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@mipmap/ic_camera_placeholder"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_addPhoto"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Add a Photo"
+            android:textColor="@color/colorPrimaryDark"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/profile_image" />
+
+        <EditText
+            android:id="@+id/et_Title"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="Title"
+            android:padding="5dp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_addPhoto" />
+
+        <EditText
+            android:id="@+id/et_Description"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="top"
+            android:hint="Description"
+            android:padding="5dp"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/et_Title" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_category"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/et_Description" />
+
+        <com.jaredrummler.materialspinner.MaterialSpinner
+            android:id="@+id/spinner_day"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_category" />
+
+        <LinearLayout
+            android:id="@+id/ll_time"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            app:layout_constraintTop_toBottomOf="@+id/spinner_day">
+
+            <TextView
+                android:id="@+id/tv_fromTime"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="From : "
+                android:textColor="@android:color/darker_gray" />
+
+            <TextView
+                android:id="@+id/tv_toTime"
+                android:layout_width="0dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="20dp"
+                android:layout_weight="1"
+                android:background="@android:color/white"
+                android:drawableRight="@android:drawable/arrow_down_float"
+                android:gravity="center_vertical"
+                android:padding="5dp"
+                android:text="To : "
+                android:textColor="@android:color/darker_gray" />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_Location"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:background="@android:color/white"
+            android:drawableRight="@drawable/ic_keyboard_arrow_right_black_18dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:text="Select Location"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/ll_time" />
+
+        <TextView
+            android:id="@+id/tv_Address"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:gravity="center_vertical"
+            android:hint="Address:"
+            android:minHeight="50dp"
+            android:padding="5dp"
+            android:textColorHint="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Location" />
+
+        <EditText
+            android:id="@+id/et_phoneNumber"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="@android:color/white"
+            android:hint="Phone Number"
+            android:padding="5dp"
+            android:inputType="phone"
+            android:textColor="@android:color/darker_gray"
+            app:layout_constraintTop_toBottomOf="@+id/tv_Address" />
+
+        <Button
+            android:id="@+id/btn_postAd"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="24dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginLeft="28dp"
+            android:layout_marginRight="28dp"
+            android:layout_marginStart="28dp"
+            android:background="@drawable/bg_btn"
+            android:gravity="center"
+            android:text="Post Ad"
+            android:textColor="@android:color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/et_phoneNumber"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

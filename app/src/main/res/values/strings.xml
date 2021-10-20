@@ -1,0 +1,29 @@
+<resources>
+    <string name="app_name">BabyCuddleCrew</string>
+    <string name="btn_sign_up">Sign Up</string>
+    <string name="btn_log_in">Log In</string>
+    <string name="btn_caption_image">Caption image</string>
+    <string name="txtPassword">Password</string>
+    <string name="cbPassword">View password</string>
+    <string name="img_baby_login">baby_logIn</string>
+    <string name="first_name">First name</string>
+    <string name="last_name">Last name</string>
+    <string name="e_mail">E-mail</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="confirm_password">Confirm Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="male">Male</string>
+    <string name="female">Female</string>
+    <string name="parent">Parent</string>
+    <string name="baby_sitter">BabySitter</string>
+    <string name="house_keeping">HouseKeeping</string>
+    <string name="cooking">Cooking</string>
+    <string name="home">Home</string>
+    <string name="post">Post</string>
+    <string name="profile">Profile</string>
+    <string name="clear_filter">Clear Filter</string>
+    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="app_id">ca-app-pub-4121948059209182~3326752403</string>
+</resources>

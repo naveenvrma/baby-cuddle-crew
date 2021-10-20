@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/babySitter"
+        android:orderInCategory="2"
+        android:title="@string/baby_sitter"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/parent"
+        android:orderInCategory="3"
+        android:title="@string/parent"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/cooking"
+        android:orderInCategory="4"
+        android:title="@string/cooking"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/houseKeeping"
+        android:orderInCategory="5"
+        android:title="@string/house_keeping"
+        app:showAsAction="never" />
+    <item
+        android:id="@+id/clear"
+        android:orderInCategory="6"
+        android:title="@string/clear_filter"
+        app:showAsAction="never" />
+</menu>
